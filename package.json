@@ -1,0 +1,20 @@
+{
+  "name": "holbertonschool-web_back_end",
+  "version": "1.0.0",
+  "description": "ES6 JavaScript project",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@babel/preset-env": "^7.20.0",
+    "babel-jest": "^29.2.1",
+    "eslint": "^8.21.0",
+    "jest": "^29.2.1"
+  }
+} 
