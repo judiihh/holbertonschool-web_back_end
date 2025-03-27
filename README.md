@@ -1,9 +1,13 @@
-# 🚀 ES6 JavaScript Project
+# 🚀 JavaScript Projects
 
-This project focuses on learning and implementing ES6 (ECMAScript 2015) features in JavaScript.
+This repository contains two JavaScript projects focusing on different aspects of JavaScript programming.
 
-## 🎯 Learning Objectives
+## 📚 Projects
 
+### 1. ES6 Basic JavaScript Project
+Focuses on learning and implementing ES6 (ECMAScript 2015) basic features in JavaScript.
+
+#### 🎯 Learning Objectives
 - Understanding ES6 and its new features
 - Working with constants and variables
 - Block-scoped variables
@@ -13,8 +17,7 @@ This project focuses on learning and implementing ES6 (ECMAScript 2015) features
 - Object creation and properties
 - Iterators and for-of loops
 
-## ✅ Tasks Completed
-
+#### ✅ Tasks Completed
 1. `0-constants.js` - Using const and let
 2. `1-block-scoped.js` - Block scoping
 3. `2-arrow.js` - Arrow functions
@@ -28,6 +31,16 @@ This project focuses on learning and implementing ES6 (ECMAScript 2015) features
 11. `10-loops.js` - For...of loops
 12. `11-createEmployeesObject.js` - Employee object creation
 13. `12-createReportObject.js` - Report object creation
+
+### 2. JavaScript Classes Project
+Focuses on Object-Oriented Programming in JavaScript using classes.
+
+#### 🎯 Learning Objectives
+- How to define a Class
+- How to add methods to a class
+- Why and how to add a static method to a class
+- How to extend a class from another
+- Metaprogramming and symbols
 
 ## 🛠️ Setup
 
@@ -48,6 +61,11 @@ npm install
 To run the tests:
 ```bash
 npm test
+```
+
+To run both tests and linting:
+```bash
+npx eslint directory_name/file_name
 ```
 
 ## 🔍 Linting
