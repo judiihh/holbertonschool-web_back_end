@@ -42,6 +42,19 @@ Focuses on Object-Oriented Programming in JavaScript using classes.
 - How to extend a class from another
 - Metaprogramming and symbols
 
+#### ✅ Tasks Completed
+1. `0-classroom.js` - Basic class implementation
+2. `1-make_classrooms.js` - Creating multiple classroom instances
+3. `2-hbtn_course.js` - Course class with getters and setters
+4. `3-currency.js` - Currency class with custom string representation
+5. `4-pricing.js` - Pricing class with static methods
+6. `5-building.js` - Abstract Building class
+7. `6-sky_high.js` - SkyHighBuilding class extending Building
+8. `7-airport.js` - Airport class with custom string representation
+9. `8-hbtn_class.js` - HolbertonClass with custom type casting
+10. `9-hoisting.js` - Class hoisting example
+11. `10-car.js` - Car class with Symbol-based cloning
+
 ## 🛠️ Setup
 
 1. Install NodeJS 20.x.x:
@@ -65,7 +78,7 @@ npm test
 
 To run both tests and linting:
 ```bash
-npx eslint directory_name/file_name
+npm run full-test
 ```
 
 ## 🔍 Linting
