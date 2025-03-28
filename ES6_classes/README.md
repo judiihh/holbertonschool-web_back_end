@@ -1,4 +1,4 @@
-# JavaScript Classes Project
+# 📚 JavaScript Classes Project
 
 This project focuses on implementing Object-Oriented Programming concepts in JavaScript using classes.
 
