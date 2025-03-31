@@ -1,4 +1,4 @@
-# ES6 Data Manipulation Project
+# 📚 ES6 Data Manipulation Project
 
 This project focuses on advanced JavaScript data manipulation techniques using ES6 features.
 
