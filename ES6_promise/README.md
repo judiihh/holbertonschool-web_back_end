@@ -1,4 +1,4 @@
-# ES6 Promises Project
+# 📚 ES6 Promises Project
 
 This project focuses on understanding and implementing Promises in JavaScript using ES6 features.
 
