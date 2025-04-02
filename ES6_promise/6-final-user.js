@@ -6,11 +6,7 @@ export default function handleProfileSignup( // return a promise
   lastName,
   fileName,
 ) {
-  return Promise.allSettled([
-    signUpUser(firstName, lastName), // sign up the user
-    uploadPhoto(fileName), // upload the photo
-  ]).then((results) => results.map((result) => ({
-    status: result.status, // return the status of the promise
-    value: result.status === 'fulfilled' ? result.value : result.reason, // return the value of the promise
-  })));
+  const promises = [signUpUser(firstName, lastName), uploadPhoto(fileName)];
+  // create an array of promises
+  return Promise.allSettled(promises); // return a promise that resolves to an array of results
 }
