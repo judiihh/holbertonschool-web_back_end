@@ -10,4 +10,4 @@ export function createUser() {
     firstName: 'Guillaume',
     lastName: 'Salva',
   });
-} 
+}
