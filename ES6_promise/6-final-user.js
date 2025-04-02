@@ -7,6 +7,6 @@ export default function handleProfileSignup(firstName, lastName, fileName) { // 
     uploadPhoto(fileName), // upload the photo
   ]).then((results) => results.map((item) => ({
     status: item.status, // return the status of the promise
-    value: item.status === 'fulfilled' ? item.value : item.reason, // return the value of the promise
+    value: item.status === 'fulfilled' ? item.value : item.reason.toString(), // return the value of the promise
   })));
 }
