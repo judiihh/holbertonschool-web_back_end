@@ -5,7 +5,7 @@ from typing import Union, Tuple
 
 def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
     """
-    Convert a string and number to a tuple with the string and square of the number.
+    Convert a string and num to a tuple with the string and square of the num.
 
     Args:
         k (str): The string to use as first element
