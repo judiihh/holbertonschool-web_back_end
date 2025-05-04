@@ -9,19 +9,19 @@ from pymongo import MongoClient
 if __name__ == "__main__":
     """Main execution block to connect to MongoDB and print stats."""
     client = MongoClient('mongodb://127.0.0.1:27017')
-    nginx_collection = client.logs.nginx
+    logs_collection = client.logs.nginx
 
-    # Total logs count
-    total_logs = nginx_collection.count_documents({})
-    print("{} logs".format(total_logs))
+    # Count of logs
+    logs_count = logs_collection.count_documents({})
+    print(f"{logs_count} logs")
 
-    # Methods count
+    # Count of methods
     print("Methods:")
     methods = ["GET", "POST", "PUT", "PATCH", "DELETE"]
     for method in methods:
-        count = nginx_collection.count_documents({"method": method})
-        print("\tmethod {}: {}".format(method, count))
+        count = logs_collection.count_documents({"method": method})
+        print(f"\tmethod {method}: {count}")
 
-    # Status check count - make sure to use this exact format to match expected output
-    status_checks = nginx_collection.count_documents({"method": "GET", "path": "/status"})
-    print("{} status check".format(status_checks))
+    # Count of status checks
+    status_check = logs_collection.count_documents({"method": "GET", "path": "/status"})
+    print(f"{status_check} status check")
