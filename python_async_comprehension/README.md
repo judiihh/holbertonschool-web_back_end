@@ -29,8 +29,21 @@ At the end of this project, you should be able to explain:
   * Takes no arguments
   * Loops 10 times ♾️
   * Asynchronously waits 1 second each iteration ⏱️
-  * Yields a random number between 0 and 10 🎲
+  * Yields a random number between 0 and 10 (specifically, `random.uniform(0, 10)`) 🎲
 * File: `0-async_generator.py`
 
-## Author 👩‍💻
-* Judith 
+### 1. Async Comprehension ⚡
+* Write a coroutine called `async_comprehension` that:
+  * Takes no arguments
+  * Collects 10 random numbers using an async comprehension over `async_generator`
+  * Returns the list of 10 random numbers 📝
+* File: `1-async_comprehension.py`
+
+### 2. Measure Runtime ⏱️
+* Write a coroutine called `measure_runtime` that:
+  * Executes `async_comprehension` four times in parallel using `asyncio.gather`
+  * Measures the total runtime and returns it 📈
+* File: `2-measure_runtime.py`
+
+## **👤 Author**
+- **Judith Espinal** - Holberton School Student 
