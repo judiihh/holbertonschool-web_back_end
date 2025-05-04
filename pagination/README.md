@@ -25,5 +25,11 @@ By the end of this project, you should be able to explain:
 - pycodestyle 2.5.*
 
 ## Files 📁
-- `Popular_Baby_Names.csv`: Dataset file containing baby names data
-- Additional Python files will be added as the project progresses 
+- `Popular_Baby_Names.csv`: Dataset file containing baby names data.
+- `0-simple_helper_function.py`: Contains the `index_range` helper function to calculate start and end indices for pagination.
+- `1-simple_pagination.py`: Implements a `Server` class with a `get_page` method for simple pagination based on page number and page size.
+- `2-hypermedia_pagination.py`: Extends the `Server` class with a `get_hyper` method that provides hypermedia metadata (like `next_page`, `prev_page`, `total_pages`) along with the page data.
+- `3-hypermedia_del_pagination.py`: Implements a `Server` class with `indexed_dataset` and `get_hyper_index` methods for deletion-resilient hypermedia pagination using indices.
+
+## **👤 Author**
+- **Judith Espinal** - Holberton School Student
