@@ -7,14 +7,13 @@ from pymongo import MongoClient
 
 
 if __name__ == "__main__":
-    """Main execution block to connect to MongoDB and print stats."""
     client = MongoClient('mongodb://127.0.0.1:27017')
     logs_collection = client.logs.nginx
 
     # Count of logs
     logs_count = logs_collection.count_documents({})
     print(f"{logs_count} logs")
-
+    
     # Count of methods
     print("Methods:")
     methods = ["GET", "POST", "PUT", "PATCH", "DELETE"]
@@ -25,3 +24,6 @@ if __name__ == "__main__":
     # Count of status checks
     status_check = logs_collection.count_documents({"method": "GET", "path": "/status"})
     print(f"{status_check} status check")
+    
+    # Close the MongoDB connection
+    client.close()
