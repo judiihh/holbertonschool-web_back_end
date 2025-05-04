@@ -45,7 +45,7 @@ class Server:
                 self.__dataset = dataset[1:]
             except FileNotFoundError:
                 print(f"Error: File {self.DATA_FILE} not found.")
-                self.__dataset = [] # Return empty if file not found
+                self.__dataset = []  # Return empty if file not found
 
         return self.__dataset
 
@@ -73,4 +73,3 @@ class Server:
 
         # Python slice handles end_index > dataset_length gracefully
         return dataset[start_index:end_index]
-    
