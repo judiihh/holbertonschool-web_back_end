@@ -28,4 +28,3 @@ if __name__ == "__main__":
         "path": "/status"
     })
     print("{} status check".format(status_check_count))
-    
