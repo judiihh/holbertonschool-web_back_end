@@ -5,11 +5,10 @@ process.stdin.setEncoding('utf8');
 process.stdin.on('readable', () => {
   const chunk = process.stdin.read();
   if (chunk !== null) {
-    process.stdout.write(`Your name is: ${chunk.toString().trim()}\n`);
+    process.stdout.write(`Your name is: ${chunk.toString().trim()}\r`);
   }
 }); // end of readable event
 
 process.stdin.on('end', () => {
   process.stdout.write('This important software is now closing\n');
 }); // end of end event
-
