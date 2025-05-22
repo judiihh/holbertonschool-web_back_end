@@ -4,9 +4,9 @@ process.stdin.setEncoding('utf8');
 
 // Use 'data' event to process incoming chunks
 process.stdin.on('data', (data) => {
-  // The piped input from 'echo' will include a newline, trim() handles it.
-  // The desired output for this EOF test expects a newline at the end.
-  process.stdout.write(`Your name is: ${data.toString().trim()}\n`);
+  const name = data.toString().trim();
+  const lineEnding = process.stdout.isTTY ? '\r' : '\n';
+  process.stdout.write(`Your name is: ${name}${lineEnding}`);
 });
 
 process.stdin.on('end', () => {
