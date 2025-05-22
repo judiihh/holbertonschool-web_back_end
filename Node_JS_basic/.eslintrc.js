@@ -18,10 +18,11 @@ module.exports = {
   },
   plugins: ['jest'],
   rules: {
-    'max-classes-per-file': 'off',
-    'no-underscore-dangle': 'off',
     'no-console': 'off',
     'no-shadow': 'off',
+    'no-unused-vars': 'off',
+    'no-underscore-dangle': 'off',
+    'max-classes-per-file': 'off',
     'no-restricted-syntax': [
       'error',
       'LabeledStatement',
@@ -34,4 +35,4 @@ module.exports = {
       excludedFiles: 'babel.config.js',
     }
   ]
-}; 
+};
