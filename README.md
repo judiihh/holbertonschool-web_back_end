@@ -1,6 +1,6 @@
 # 🚀 Web Backend Development Projects
 
-This repository contains various projects focusing on different aspects of web backend development, including JavaScript (ES6) and Python.
+This repository contains various projects focusing on different aspects of web backend development, including JavaScript (ES6), Node.js, and Python.
 
 ## 📚 Projects
 
@@ -84,6 +84,42 @@ Focuses on type annotations in Python programming.
 - How to use type annotations to specify function signatures and variable types
 - Duck typing
 - How to validate your code with mypy
+
+### 6. Node.js Basics Project
+Comprehensive Node.js project covering fundamental concepts from basic I/O operations to building full-featured web servers with Express.js and MVC architecture.
+
+#### 🎯 Learning Objectives
+- Understanding Node.js runtime environment
+- Working with process stdin/stdout
+- Creating HTTP servers using Node.js built-in modules
+- Building web applications with Express.js framework
+- Implementing MVC architecture patterns
+- File system operations and CSV parsing
+- ES6 modules and Babel transpilation
+- RESTful API design and routing
+
+#### ✅ Tasks Completed
+1. `0-console.js` - Basic console output function
+2. `1-stdin.js` - Interactive command-line program with stdin handling
+3. `4-http.js` - Basic HTTP server using Node.js http module
+4. `5-http.js` - Complex HTTP server with CSV parsing and student endpoints
+5. `6-http_express.js` - Simple Express.js server implementation
+6. `7-http_express.js` - Complex Express server with student data routes
+7. `full_server/` - Complete MVC Express application with:
+   - Controllers for handling business logic
+   - Routes for endpoint definitions
+   - Utilities for database operations
+   - ES6 modules with Babel support
+
+#### 🌐 Server Features
+- **Basic HTTP Server**: Simple greeting endpoint
+- **Student Data API**: CSV-based student management system
+- **Express Integration**: Modern web framework implementation
+- **MVC Architecture**: Organized code structure with separation of concerns
+- **RESTful Endpoints**: 
+  - `GET /` - Home page
+  - `GET /students` - All students grouped by major
+  - `GET /students/:major` - Students filtered by major (CS/SWE)
 
 ## 🛠️ Setup
 
