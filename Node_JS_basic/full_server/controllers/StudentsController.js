@@ -1,4 +1,4 @@
-import readDatabase from '../utils.js';
+import readDatabase from '../utils';
 
 class StudentsController {
   static async getAllStudents(request, response) {
@@ -6,17 +6,19 @@ class StudentsController {
 
     try {
       const students = await readDatabase(databasePath);
-      
+
       let result = 'This is the list of our students\n';
-      
+
       // Sort fields alphabetically (case insensitive)
-      const sortedFields = Object.keys(students).sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
-      
+      const sortedFields = Object.keys(students).sort((a, b) => (
+        a.toLowerCase().localeCompare(b.toLowerCase())
+      ));
+
       sortedFields.forEach((field) => {
         const studentsList = students[field];
         result += `Number of students in ${field}: ${studentsList.length}. List: ${studentsList.join(', ')}\n`;
       });
-      
+
       response.status(200).send(result.trim());
     } catch (error) {
       response.status(500).send('Cannot load the database');
@@ -34,7 +36,7 @@ class StudentsController {
 
     try {
       const students = await readDatabase(databasePath);
-      
+
       if (students[major]) {
         response.status(200).send(`List: ${students[major].join(', ')}`);
       } else {
@@ -46,4 +48,4 @@ class StudentsController {
   }
 }
 
-export default StudentsController; 
+export default StudentsController;
