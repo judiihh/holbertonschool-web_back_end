@@ -18,21 +18,22 @@ module.exports = {
   },
   plugins: ['jest'],
   rules: {
+    'max-classes-per-file': 'off',
+    'no-underscore-dangle': 'off',
     'no-console': 'off',
     'no-shadow': 'off',
-    'no-unused-vars': 'off',
-    'no-underscore-dangle': 'off',
-    'max-classes-per-file': 'off',
     'no-restricted-syntax': [
       'error',
       'LabeledStatement',
       'WithStatement',
     ],
   },
-  overrides:[
+  overrides: [
     {
-      files: ['*.js'],
-      excludedFiles: 'babel.config.js',
-    }
-  ]
-};
+      files: ['1-stdin.js'],
+      rules: {
+        'jest/require-hook': 'off',
+      },
+    },
+  ],
+}; 
