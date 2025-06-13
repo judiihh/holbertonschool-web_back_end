@@ -28,12 +28,10 @@ module.exports = {
       'WithStatement',
     ],
   },
-  overrides: [
+  overrides:[
     {
-      files: ['1-stdin.js'],
-      rules: {
-        'jest/require-hook': 'off',
-      },
-    },
-  ],
-}; 
+      files: ['*.js'],
+      excludedFiles: 'babel.config.js',
+    }
+  ]
+};
